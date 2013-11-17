@@ -17,9 +17,11 @@ Memcache
 To Compile mod_auth_memecahce I needed a minor hack to memcache source code
 nano /memcached/memcached-1.4.15/memcached.h
 (after the other defines add the following lines)
+''''
 #ifdef OK
 #undef OK
 #endif
+''''
 
 UPDATED VERSION
 ================
